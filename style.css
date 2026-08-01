@@ -46,19 +46,17 @@ nav a:hover{
     color:#FFD700;
 }
 
-/* Hero */
+/* Hero (Homepage) */
 
 .hero{
     height:90vh;
     background:linear-gradient(rgba(0,40,85,.65),rgba(0,40,85,.65)),
     url("hero-1.jpg") center/cover no-repeat;
-
     display:flex;
     justify-content:center;
     align-items:center;
     text-align:center;
     color:#fff;
-    transition: background-image .8s ease-in-out;
 }
 
 .hero-text{
@@ -157,7 +155,7 @@ section h2{
     border-radius:8px;
 }
 
-/* Contact */
+/* Contact section on homepage */
 
 .contact{
     background:#003b8e;
@@ -178,4 +176,226 @@ section h2{
 footer{
     background:#001b40;
     color:white;
-    text-align
+    text-align:center;
+    padding:20px;
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+    header{
+        flex-direction:column;
+    }
+    nav{
+        margin-top:15px;
+    }
+    nav a{
+        display:block;
+        margin:10px 0;
+    }
+    .hero h1{
+        font-size:34px;
+    }
+    .hero p{
+        font-size:18px;
+    }
+    section{
+        padding:60px 20px;
+    }
+}
+
+/* ===========================
+   Inner Page Hero
+=========================== */
+
+.page-hero{
+    height:40vh;
+    min-height:260px;
+    background:linear-gradient(rgba(0,40,85,.75),rgba(0,40,85,.75)),
+    url("hero-2.jpg") center/cover no-repeat;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:#fff;
+}
+
+.page-hero h1{
+    font-size:42px;
+    margin-bottom:10px;
+}
+
+.page-hero p{
+    color:#FFD700;
+    font-size:18px;
+}
+
+@media(max-width:768px){
+    .page-hero h1{
+        font-size:30px;
+    }
+}
+
+/* ===========================
+   About Page
+=========================== */
+
+.about-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:40px;
+    align-items:center;
+}
+
+.about-grid img{
+    width:100%;
+    border-radius:15px;
+    box-shadow:0 8px 20px rgba(0,0,0,.1);
+}
+
+.about-grid h2{
+    text-align:left;
+}
+
+.mission-vision{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+}
+
+@media(max-width:768px){
+    .about-grid{
+        grid-template-columns:1fr;
+    }
+    .about-grid h2{
+        text-align:center;
+    }
+}
+
+/* ===========================
+   Academics Page
+=========================== */
+
+.curriculum-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:30px;
+}
+
+.curriculum-grid .card{
+    text-align:left;
+}
+
+/* ===========================
+   Admissions Page
+=========================== */
+
+.steps{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:30px;
+}
+
+.steps .card{
+    position:relative;
+    padding-top:45px;
+}
+
+.steps .card .step-number{
+    position:absolute;
+    top:-20px;
+    left:50%;
+    transform:translateX(-50%);
+    background:#003b8e;
+    color:#FFD700;
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-weight:bold;
+}
+
+.requirements ul{
+    max-width:700px;
+    margin:auto;
+    list-style:none;
+}
+
+.requirements li{
+    background:white;
+    margin:12px 0;
+    padding:16px;
+    border-left:6px solid #003b8e;
+    border-radius:8px;
+}
+
+.admissions-cta{
+    text-align:center;
+    background:#003b8e;
+    color:white;
+    border-radius:15px;
+    padding:50px 20px;
+}
+
+.admissions-cta h2{
+    color:#FFD700;
+}
+
+/* ===========================
+   Gallery Page
+=========================== */
+
+.gallery-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+    gap:20px;
+}
+
+.gallery-grid img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+    border-radius:12px;
+    transition:.4s;
+    box-shadow:0 6px 16px rgba(0,0,0,.08);
+}
+
+.gallery-grid img:hover{
+    transform:scale(1.03);
+}
+
+/* ===========================
+   News Page
+=========================== */
+
+.news-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+}
+
+.news-grid .card{
+    text-align:left;
+    padding:0;
+    overflow:hidden;
+}
+
+.news-grid .card img{
+    width:100%;
+    height:180px;
+    object-fit:cover;
+}
+
+.news-grid .card .card-body{
+    padding:25px;
+}
+
+.news-date{
+    color:#FFD700;
+    background:#003b8e;
+    display:inline-block;
+    padding:4px 12px;
+    border-radius:50px;
+    font-size:13
