@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+   <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -17,7 +17,9 @@
         <img src="logo.png" alt="Charisbreed Logo">
     </div>
 
-    <nav>
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+
+    <nav id="navMenu">
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
         <a href="academics.html">Academics</a>
@@ -87,5 +89,11 @@
     <p>© 2026 Charisbreed Excellence Academy</p>
 </footer>
 
+<script>
+function toggleMenu() {
+    document.getElementById("navMenu").classList.toggle("active");
+}
+</script>
+
 </body>
-</html>
+</html> 
