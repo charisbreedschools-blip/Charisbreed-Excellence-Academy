@@ -13,12 +13,13 @@
 <body>
 
 <header>
-
     <div class="logo">
         <img src="logo.png" alt="Charisbreed Logo">
     </div>
 
-    <nav>
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+
+    <nav id="navMenu">
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
         <a href="academics.html">Academics</a>
@@ -26,126 +27,73 @@
         <a href="admissions.html">Admissions</a>
         <a href="contact.html">Contact</a>
     </nav>
-
 </header>
 
 <section class="hero">
-
-<div class="hero-text">
-
-<h1>CHARISBREED EXCELLENCE ACADEMY</h1>
-
-<h2>Modeling Excellence</h2>
-
-<p>
-Nigerian • British • Montessori Curriculum
-</p>
-
-<p>
-Early Years • Primary • Junior High School
-</p>
-
-<a href="admissions.html" class="btn">
-Apply Now
-</a>
-
-</div>
-
+    <div class="hero-text">
+        <h1>CHARISBREED EXCELLENCE ACADEMY</h1>
+        <h2>Modeling Excellence</h2>
+        <p>Nigerian • British • Montessori Curriculum</p>
+        <p>Early Years • Primary • Junior High School</p>
+        <a href="admissions.html" class="btn">Apply Now</a>
+    </div>
 </section>
 
 <section class="welcome">
-
-<h2>Welcome to Charisbreed Excellence Academy</h2>
-
-<p>
-
-We are committed to providing quality education through a unique blend of the Nigerian, British and Montessori curricula.
-
-Our goal is to nurture confident, creative, disciplined and academically outstanding learners who are prepared for the future.
-
-</p>
-
+    <h2>Welcome to Charisbreed Excellence Academy</h2>
+    <p>
+        We are committed to providing quality education through a unique blend of the Nigerian, British and Montessori curricula.
+        Our goal is to nurture confident, creative, disciplined and academically outstanding learners who are prepared for the future.
+    </p>
 </section>
 
 <section class="programmes">
+    <h2>Our Programmes</h2>
 
-<h2>Our Programmes</h2>
+    <div class="card">
+        <h3>Early Years</h3>
+        <p>Creche • Toddler • Nursery • Reception</p>
+    </div>
 
-<div class="card">
+    <div class="card">
+        <h3>Primary School</h3>
+        <p>Grade 1 - Grade 6</p>
+    </div>
 
-<h3>Early Years</h3>
-
-<p>Creche • Toddler • Nursery • Reception</p>
-
-</div>
-
-<div class="card">
-
-<h3>Primary School</h3>
-
-<p>Grade 1 - Grade 6</p>
-
-</div>
-
-<div class="card">
-
-<h3>Junior High School</h3>
-
-<p>Preparing learners for future success.</p>
-
-</div>
-
+    <div class="card">
+        <h3>Junior High School</h3>
+        <p>Preparing learners for future success.</p>
+    </div>
 </section>
 
 <section class="why">
-
-<h2>Why Choose Us?</h2>
-
-<ul>
-
-<li>Nigerian, British & Montessori Curriculum</li>
-
-<li>Coding & Robotics</li>
-
-<li>Experienced Teachers</li>
-
-<li>Character Development</li>
-
-<li>Safe Learning Environment</li>
-
-<li>Small Class Sizes</li>
-
-</ul>
-
+    <h2>Why Choose Us?</h2>
+    <ul>
+        <li>Nigerian, British & Montessori Curriculum</li>
+        <li>Coding & Robotics</li>
+        <li>Experienced Teachers</li>
+        <li>Character Development</li>
+        <li>Safe Learning Environment</li>
+        <li>Small Class Sizes</li>
+    </ul>
 </section>
 
 <section class="contact">
-
-<h2>Contact Us</h2>
-
-<p>
-📍 4 Wonodi Close, Lovers Unity Estate, Rumuowha, Eneka, Rivers State.
-</p>
-
-<p>
-📞 08063339276 | 09026707368
-</p>
-
-<p>
-✉️ charisbreedschools@gmail.com
-</p>
-
+    <h2>Contact Us</h2>
+    <p>📍 4 Wonodi Close, Lovers Unity Estate, Rumuowha, Eneka, Rivers State.</p>
+    <p>📞 08063339276 | 09026707368</p>
+    <p>✉️ charisbreedschools@gmail.com</p>
 </section>
 
 <footer>
-
-<p>
-
-© 2026 Charisbreed Excellence Academy
-
-</p>
-
+    <p>© 2026 Charisbreed Excellence Academy</p>
 </footer>
+
+<script>
+function toggleMenu() {
+    document.getElementById("navMenu").classList.toggle("active");
+}
+</script>
 
 </body>
 </html>
