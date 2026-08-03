@@ -13,8 +13,12 @@
 <body>
 
 <header>
-    <div class="logo">
+    <div class="logo" style="display:flex; align-items:center; gap:12px;">
         <img src="logo.png" alt="Charisbreed Logo">
+        <div style="line-height:1.2;">
+            <div style="font-weight:700; font-size:16px; color:#fff;">Charisbreed</div>
+            <div style="font-size:13px; color:#FFD700;">Excellence Academy</div>
+        </div>
     </div>
 
     <button class="menu-toggle" onclick="toggleMenu()">☰</button>
@@ -35,7 +39,11 @@
         <h2>Modeling Excellence</h2>
         <p>Nigerian • British • Montessori Curriculum</p>
         <p>Early Years • Primary • Junior High School</p>
-        <a href="admissions.html" class="btn">Apply Now</a>
+
+        <div style="margin-top:25px; display:flex; gap:15px; justify-content:center; flex-wrap:wrap;">
+            <a href="admissions.html" class="btn">Apply Now</a>
+            <a href="about.html" class="btn" style="background:transparent; border:2px solid #FFD700; color:#FFD700;">Learn More</a>
+        </div>
     </div>
 </section>
 
@@ -96,4 +104,4 @@ function toggleMenu() {
 </script>
 
 </body>
-</html> 
+</html>
